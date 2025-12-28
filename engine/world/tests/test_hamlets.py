@@ -22,3 +22,8 @@ class TestHamlets:
         hamlet = Hamlets(level=1, villagers=4)
         hamlet.add_villagers(2)
         assert hamlet.villagers == 6
+    
+    def test_upgrade(self):
+        hamlet = Hamlets(level=1, villagers=0)
+        hamlet.upgrade()
+        assert hamlet.level == 2

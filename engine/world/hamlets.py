@@ -11,3 +11,6 @@ class Hamlets:
     
     def add_villagers(self, villagers: int):
         self.villagers += villagers
+
+    def upgrade(self):
+        self.level += 1
